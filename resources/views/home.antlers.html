@@ -1,0 +1,33 @@
+<h1>Dog-ear Books</h1>
+<p>An independent bookshop for slow readers and corner-folders, and a demo of Cookie Connect: choose a consent platform under Tools → Cookie Connect, then come back here.</p>
+
+<h2>From the shop floor</h2>
+{{# A video that sets marketing cookies, held back until they're allowed. #}}
+{{ consent:marketing placeholder="true" }}
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ" title="A short film" allowfullscreen></iframe>
+{{ /consent:marketing }}
+
+{{# An analytics script, run only once analytics is allowed. #}}
+{{ consent:analytics }}
+    <script>window.demoAnalytics = (window.demoAnalytics || 0) + 1; console.log('Analytics ran');</script>
+{{ /consent:analytics }}
+
+<h2>What Cookie Connect knows</h2>
+<pre id="consent-state">Waiting for the consent platform…</pre>
+<script>
+    CookieConnect.on('change', function (state) {
+        document.getElementById('consent-state').textContent = JSON.stringify(state, null, 2)
+            + '\n\nThe analytics script has run ' + (window.demoAnalytics || 0) + ' time(s).';
+    });
+</script>
+
+<h2>New in</h2>
+<div class="grid">
+    {{ collection:books limit="8" }}
+        <a href="{{ url }}">{{ cover_image }}<img src="{{ glide:url width='360' }}" alt="">{{ /cover_image }}<p>{{ title }}</p></a>
+    {{ /collection:books }}
+</div>
+<h2>From the journal</h2>
+{{ collection:journal limit="4" }}
+    <p><a href="{{ url }}">{{ title }}</a> · {{ date format="j F Y" }}</p>
+{{ /collection:journal }}

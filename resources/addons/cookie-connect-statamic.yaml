@@ -1,0 +1,4 @@
+environments: 'production, local'
+when_off: block
+auto_insert: true
+debug: false
