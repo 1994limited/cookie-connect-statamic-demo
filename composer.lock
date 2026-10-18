@@ -72,16 +72,16 @@
         },
         {
             "name": "1994/cookie-connect-statamic",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/1994limited/cookie-connect-statamic.git",
-                "reference": "1965ef926551564f47a84e0dd1fdee26f24cb575"
+                "reference": "de32d9bb05bd00e9078dca363961313f20f481e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/1994limited/cookie-connect-statamic/zipball/1965ef926551564f47a84e0dd1fdee26f24cb575",
-                "reference": "1965ef926551564f47a84e0dd1fdee26f24cb575",
+                "url": "https://api.github.com/repos/1994limited/cookie-connect-statamic/zipball/de32d9bb05bd00e9078dca363961313f20f481e8",
+                "reference": "de32d9bb05bd00e9078dca363961313f20f481e8",
                 "shasum": ""
             },
             "require": {
@@ -104,7 +104,7 @@
                 "statamic": {
                     "name": "Cookie Connect",
                     "developer": "1994",
-                    "description": "Connects your site to the cookie consent platform you already use: paste its ID, get Google Consent Mode v2 in the right order, and hold back scripts the same way whichever platform is behind it.",
+                    "description": "Connect your site to the cookie consent platform you already use: paste its ID, and get Google Consent Mode v2 in the right order.",
                     "developer-url": "https://1994.co.uk"
                 }
             },
@@ -124,7 +124,7 @@
                     "homepage": "https://1994.co.uk"
                 }
             ],
-            "description": "Connects Statamic to the cookie consent platform you already use (Cookiebot, Usercentrics, OneTrust, CookieYes, iubenda, Termly, CookieFirst, Cookie-Script or any other): paste its ID in the Control Panel, get Google Consent Mode v2 in the right order, and mark scripts that need consent the same way whichever platform is behind it.",
+            "description": "Connect your site to the cookie consent platform you already use: paste its ID, and get Google Consent Mode v2 in the right order.",
             "keywords": [
                 "consent mode",
                 "cookie consent",
@@ -138,9 +138,9 @@
             "support": {
                 "email": "hello@1994.co.uk",
                 "issues": "https://github.com/1994limited/cookie-connect-statamic/issues",
-                "source": "https://github.com/1994limited/cookie-connect-statamic/tree/v1.0.0"
+                "source": "https://github.com/1994limited/cookie-connect-statamic/tree/v1.0.1"
             },
-            "time": "2026-10-18T00:34:55+00:00"
+            "time": "2026-10-18T00:52:24+00:00"
         },
         {
             "name": "ajthinking/archetype",
